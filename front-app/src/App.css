@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "GOST Type B";
+  src: url("../GOST_A-AU-B-BU/GOST type B.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +46,32 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.dynamic-background {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
